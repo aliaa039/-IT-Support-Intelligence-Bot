@@ -1,0 +1,29 @@
+# IT Support Bot - pip install -r requirements.txt
+# Recommended: Python 3.11 or 3.12 (3.14 has numpy/langchain conflicts).
+
+# Core
+streamlit>=1.53.0
+# CrewAI: 0.11.x works on Python 3.14; 1.x needs 3.10–3.13
+crewai>=0.11.0,<0.12
+
+# LangChain (compatible with CrewAI 0.11)
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-groq>=0.0.1
+
+# Data (langchain/crewai require numpy<2; use Python 3.11 or 3.12 to avoid conflicts)
+numpy>=1.26.0,<2
+pandas>=2.0.0
+
+# Env
+python-dotenv>=1.0.0
+
+# LLM
+groq>=0.4.0
+
+# Utils
+pydantic>=2.0.0
+tenacity>=8.0.0
+
+# Tests
+pytest>=7.0.0
